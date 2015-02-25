@@ -142,7 +142,6 @@ Public Class MultiIcon
                 Dim Byt(Ie.BytesInRes - 1) As Byte
                 Stream.Seek(Ie.ImageOffset, SeekOrigin.Begin)
                 Stream.Read(Byt, 0, Ie.BytesInRes)
-                Stream.Close()
 
                 ByteIcons.Add(Byt)
             Next
