@@ -112,15 +112,15 @@ Public Class MultiIcon
             Dim ByteIcons As New List(Of Byte())
 
             Dim Ie As IconEntry
-            For j = 0 To Count - 1
-                Dim Bytes = IO.File.ReadAllBytes(MultiIcons(j))
+            For i = 0 To Count - 1
+                Dim Bytes = IO.File.ReadAllBytes(MultiIcons(i))
 
                 Stream = New MemoryStream(Bytes)
                 Stream.Seek(6, SeekOrigin.Begin)
 
                 Dim Br As New BinaryReader(Stream)
                 Ie.Width = Br.ReadByte
-                If j = 0 Then Size = CInt(Ie.Width)
+                If i = 0 Then Size = CInt(Ie.Width)
                 Ie.Height = Br.ReadByte
                 Ie.ColorCount = Br.ReadByte
                 Ie.Reserved = Br.ReadByte
