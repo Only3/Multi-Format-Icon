@@ -119,7 +119,7 @@ Public Class MultiIcon
 
                 Dim Br As New BinaryReader(Stream)
                 Ie.Width = Br.ReadByte
-                If j = 0 Then Size = Ie.Width
+                If j = 0 Then Size = CInt(Ie.Width)
                 Ie.Height = Br.ReadByte
                 Ie.ColorCount = Br.ReadByte
                 Ie.Reserved = Br.ReadByte
