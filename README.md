@@ -3,6 +3,8 @@ Extract Or Create Multi Format Icon
 
 # Create
 
+' Defult \ Large icon the first one
+
 Dim I As New MultiIcon({"1.ico", "2.ico"})
 
 I.SaveMultiIcon("New.ico")
@@ -11,7 +13,7 @@ I.SaveMultiIcon("New.ico")
 
 Dim I As New MultiIcon("Multi.ico")
 
-'Icon = I.Icons(0)
+Icon = I.Icons(0)
 
 I.SaveIcon(0, "0.ico")
 
