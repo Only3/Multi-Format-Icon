@@ -1,4 +1,4 @@
-Public Class MultiIcon
+    Public Class MultiIcon
 
         Public Count As Integer
         Public Icons As New List(Of Icon)
