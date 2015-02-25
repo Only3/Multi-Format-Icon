@@ -46,7 +46,7 @@
                 EntryIcons.Add(Ie)
             Next
 
-            EntryIcons = EntryIcons.OrderBy(Function(i) i.Width).ToList
+            ' EntryIcons = EntryIcons.OrderBy(Function(i) i.Width).ToList
 
             For i = 0 To Count - 1
                 Icons.Add(GetIcon(i))
