@@ -91,6 +91,7 @@ Public Class MultiIcon
             Ms.Seek(0, SeekOrigin.Begin)
             Return New Icon(Ms, Ie.Width, Ie.Height)
             Bw.Close()
+            Stream.Close()
         End Function
 
         Public Sub SaveMultiIcon(File As String)
@@ -153,5 +154,6 @@ Public Class MultiIcon
             Ms.Seek(0, SeekOrigin.Begin)
             Return New Icon(Ms, Size, Size)
             Bw.Close()
+            Stream.Close()
         End Function
     End Class
