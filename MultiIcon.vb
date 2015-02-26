@@ -128,8 +128,8 @@
                 Ie.BytesInRes = Br.ReadInt32
                 Ie.ImageOffset = Br.ReadInt32
 
-                Bw.Write(CByte(0))
-                Bw.Write(CByte(0))
+                Bw.Write(Ie.Width)
+                Bw.Write(Ie.Height)
                 Bw.Write(Ie.ColorCount)
                 Bw.Write(Ie.Reserved)
                 Bw.Write(Ie.Planes)
